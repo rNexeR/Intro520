@@ -13,6 +13,8 @@ public class Tarea
 		System.out.println("Reultado Total:");
 		System.out.println(Numero1 + Numero);
 
+		//Solo un comentario
+
 
 	}
 }
