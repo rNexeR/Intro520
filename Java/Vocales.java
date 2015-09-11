@@ -8,12 +8,23 @@ public class Vocales{
 		System.out.print("Ingrese un texto: ");
 		texto = rd.next().toLowerCase();
 
-		letra = texto.charAt(2);
+		while(true){
+		
+		letra = texto.charAt(texto.length() -1);
 
-		if(letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u')
-			System.out.println("La letra " + letra + " Es Vocal");
-		else
-			System.out.println("La letra " + letra + " Es Consonante");
+		switch (letra){
+			case 'a':
+			case 'e':
+			case 'i':
+			case 'o':
+			case 'u':
+				System.out.println("La letra " + letra + " Es Vocal");
+				return;
+			default:
+				System.out.println("La letra " + letra + " Es Consonante");	
+				return	;
+			}
+	}
 
 	}
 }
